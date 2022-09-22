@@ -24,6 +24,7 @@
 
         .timebox {
             position: absolute;
+            /* background-color: antiquewhite; */
             top: 13%;
             left: 50%;
             transform: translate(-50%, -50%);
@@ -56,7 +57,7 @@
         .inputs {
             position: absolute;
             outline: none;
-            width: 45%;
+            width: 50%;
             top: 23%;
             left: 29%;
             font-size: 20px;
@@ -96,6 +97,50 @@
         .btn:hover {
             background-color: rgb(200, 237, 242);
             color: #5f9eb1;
+        }
+
+        @media only screen and (max-width: 750px){
+        .timebox {
+            width: 100%;
+            transform: translate(-50%, -50%);
+        }
+        .timebox h3 {
+            margin-left: 25px;
+            font-size: 20px;
+        }
+        .inputs {
+            position: absolute;
+            outline: none;
+            width: 45%;
+            top: 23%;
+            left: 29%;
+            font-size: 14px;
+        }
+        .show {
+            position: absolute;
+            top: 55%;
+            left: 52%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            font-size: 25px;
+        }
+
+        .show h3 {
+            font-size: 20px;
+        }
+
+        .show span {
+            letter-spacing: 2px;
+            font-size: 30px;
+        }
+        .btnblock {
+            top: 75%;
+        }
+        .btn {
+            padding: 3px 10px;
+            margin: 12px;
+            font-size: 15px;
+        }
         }
     </style>
 </head>
@@ -222,7 +267,7 @@
             window.alert('定时结束')
         }
 
-
+        
 
     </script>
 </body>
